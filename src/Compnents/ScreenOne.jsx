@@ -13,10 +13,10 @@ function ScreenOne() {
       })
   }, [])
 
-  console.log(shows);
+  //console.log(shows);
   return (
     <div className='container'>
-      <h1 className=' text-center mt-5 text-success'>Welcome to TV MAZE</h1>
+      <h1 className=' text-center mt-5 text-info'>Welcome to TV MAZE</h1>
       <div className='row justify-content-center gap-2'>
         {
           shows.map((show,index) =>
