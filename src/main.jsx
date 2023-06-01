@@ -12,7 +12,8 @@ const router=createBrowserRouter([
   },
   {
     path:"/:id",
-    element: <ScreenTwo></ScreenTwo>
+    element: <ScreenTwo></ScreenTwo>,
+    loader:()=>fetch('https://api.tvmaze.com/search/shows?q=all')
   }
 ])
 
