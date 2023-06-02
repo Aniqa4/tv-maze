@@ -17,10 +17,10 @@ function ScreenOne() {
   return (
     <div className='container'>
       <h1 className=' text-center mt-5 text-info'>Welcome to TV MAZE</h1>
-      <div className='row justify-content-center gap-2'>
+      <div className='row justify-content-center gap-2 m-1'>
         {
           shows.map((show,index) =>
-            <div key={index} className='col-5 border rounded-3 d-flex gap-5 p-3 bg-info-subtle'>
+            <div key={index} className='col col-md-10 col-lg-5 border rounded-3 d-flex gap-2 p-3 bg-info-subtle'>
               <img src={show.show.image.medium} className='rounded-3' />
               <div>
                 <h3>{show.show.name}</h3>

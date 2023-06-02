@@ -46,7 +46,7 @@ function ScreenTwo() {
 
   //console.log(show);
   return (
-    <div className='row m-5 gap-5'>
+    <div className='row m-md-5 gap-5'>
       <div className='col border rounded p-5 bg-info-subtle'>
         <h5>Summary:</h5>
         <div dangerouslySetInnerHTML={{ __html: show.show.summary }}>
@@ -65,7 +65,7 @@ function ScreenTwo() {
             </form>)
         }
       </div>
-      <div className='col-3'>
+      <div className='col-sm col-md-4 col-lg-3'>
         <h4>Booking History</h4>
         {bookingHistory.length === 0 ? (
           <p>No booking history available.</p>
